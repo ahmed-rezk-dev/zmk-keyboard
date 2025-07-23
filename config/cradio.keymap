@@ -11,6 +11,12 @@
 
 // Keep sticky keys active for a long time so they effectively do not time out
 
+
+&mt {
+    //  flavor = "tap-preferred";
+    // tapping_term_ms = <200>;
+};
+
 #define STICKY_KEY_TIMEOUT 60000
 #define HYP LS(LC(LA(LGUI)))
 #define MASH LS(LC(LALT))
@@ -51,7 +57,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
-            &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      HYP(P,
+            &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &mt HYP P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ' "      │
             HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,        SQT)
