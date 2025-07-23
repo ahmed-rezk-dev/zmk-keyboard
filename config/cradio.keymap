@@ -17,6 +17,23 @@
     // tapping_term_ms = <200>;
 };
 
+#define LEFT_HYPER LS(LC(LA(LGUI)))
+#define LH(key) LS(LC(LA(LG(key))))
+#define LHYPER LEFT_HYPER
+#define OFFICE LEFT_HYPER
+
+#define LEFT_MEH LS(LC(LALT))
+#define LM(key) LS(LC(LA(key)))
+#define LMEH LEFT_MEH
+
+#define RIGHT_HYPER RS(RC(RA(RGUI)))
+#define RH(key) RS(RC(RA(RG(key))))
+#define RHYPER RIGHT_HYPER
+
+#define RIGHT_MEH RS(RC(RALT))
+#define RM(key) RS(RC(RA(key)))
+#define RMEH RIGHT_MEH
+
 #define STICKY_KEY_TIMEOUT 60000
 #define HYP LS(LC(LA(LGUI)))
 #define MASH LS(LC(LALT))
@@ -57,7 +74,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
-            &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp HYP
+            &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O     &mt LEFT_HYPER P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ' "      │
             HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,        SQT)
