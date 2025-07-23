@@ -26,6 +26,11 @@
 #define LM(key) LS(LC(LA(key)))
 #define LMEH LEFT_MEH
 
+
+#define LEFT_ULTRA LG(LC(LALT))
+#define LU(key) LG(LC(LA(key)))
+#define LULTRA LEFT_ULTRA
+
 #define RIGHT_HYPER RS(RC(RA(RGUI)))
 #define RH(key) RS(RC(RA(RG(key))))
 #define RHYPER RIGHT_HYPER
@@ -34,12 +39,12 @@
 #define RM(key) RS(RC(RA(key)))
 #define RMEH RIGHT_MEH
 
-#define STICKY_KEY_TIMEOUT 60000
-#define HYP LS(LC(LA(LGUI)))
-#define MASH LS(LC(LALT))
-#define ULTRA LG(LC(LALT))
 
-#define HYPER(key) LS(LC(LA(LG(key))))
+#define RIGHT_ULTRA RG(RC(RALT))
+#define RU(key) RG(RC(RA(key)))
+#define RULTRA RIGHT_ULTRA
+
+#define STICKY_KEY_TIMEOUT 60000
 
 &sk {
     release-after-ms = <STICKY_KEY_TIMEOUT>;
@@ -74,7 +79,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
-            &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O     &mt LEFT_HYPER P
+          &mt RULTRA Q &mt RMEH W &mt RHYPER E &kp R    &kp T          &kp Y      &kp U    &mt LHYPER I &mt LMEH O &mt LULTRA P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ' "      │
             HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,        SQT)
