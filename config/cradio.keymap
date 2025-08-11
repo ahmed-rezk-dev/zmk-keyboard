@@ -9,14 +9,6 @@
 #define HRML(k1,k2,k3,k4) &ht LSHFT k1  &ht LALT k2  &ht LCTRL k3  &ht LGUI k4
 #define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHFT k4
 
-// Keep sticky keys active for a long time so they effectively do not time out
-
-
-&mt {
-    //  flavor = "tap-preferred";
-    // tapping_term_ms = <200>;
-};
-
 #define LEFT_HYPER LS(LC(LA(LGUI)))
 #define LH(key) LS(LC(LA(LG(key))))
 #define LHYPER LEFT_HYPER
@@ -44,14 +36,11 @@
 #define RU(key) RG(RC(RA(key)))
 #define RULTRA RIGHT_ULTRA
 
-#define STICKY_KEY_TIMEOUT 60000
-
-&sk {
-    release-after-ms = <STICKY_KEY_TIMEOUT>;
-
-    /delete-property/ ignore-modifiers;
-};
-
+// Tmux
+#define LEFT_TMUX LC(b)
+#define LTMUX LEFT_TMUX
+#define RIGHT_TMUX RC(b)
+#define RTMUX RIGHT_TMUX
 / {
     behaviors {
         ht: hold_tap {
@@ -79,7 +68,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
-          &mt RULTRA Q &mt RMEH W &mt RHYPER E &kp R    &kp T          &kp Y      &kp U    &mt LHYPER I &mt LMEH O &mt LULTRA P
+          &mt RULTRA Q &mt RMEH W &mt RHYPER E &mt LTMUX R    &kp T          &kp Y     &mt RTMUX U    &mt LHYPER I &mt LMEH O &mt LULTRA P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ' "      │
             HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,        SQT)
