@@ -85,7 +85,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
-        &mt RULTRA Q &mt RMEH W &mt RHYPER E &mt LTMUX R  &kp T       &kp Y     &mt RTMUX U &mt LHYPER I &mt LMEH O &mt LULTRA P
+        &mt RULTRA Q &mt RMEH W &mt RHYPER E &kp LTMUX R  &kp T       &kp Y     &kp RTMUX U &mt LHYPER I &mt LMEH O &mt LULTRA P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ' "      │
             HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,        SQT)
