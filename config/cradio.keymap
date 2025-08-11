@@ -45,9 +45,9 @@
 #define RULTRA RIGHT_ULTRA
 
 // Tmux
-#define LEFT_TMUX LC(b)
+#define LEFT_TMUX LC(B)
 #define LTMUX LEFT_TMUX
-#define RIGHT_TMUX RC(b)
+#define RIGHT_TMUX RC(B)
 #define RTMUX RIGHT_TMUX
 
 #define STICKY_KEY_TIMEOUT 60000
