@@ -148,10 +148,10 @@
              bindings = <
           //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
           //│          │SCRL_LEFT │ SCRL_UP  │SCRL_RIGHT│          │   │  BTN5    │  BTN4    │   UP     │          │          │
-             &trans     &msc 0xfff60004 &msc 0xfff60006 &msc 0xfff60005 &trans &mkp 0x10 &mkp 0x8 &mkp 0xfff60003 &trans &trans &trans
+             &trans     &msc SCRL_LEFT &msc SCRL_UP &msc SCRL_RIGHT &trans &mkp MB5 &mkp MB4 &mkp MOVE_UP &trans &trans &trans
          //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
          //│          │  LCLK    │SCRL_DOWN │  RCLK    │          │   │          │  LEFT    │  DOWN    │  RIGHT   │          │
-            &trans     &mkp 0x1 &msc 0xfff60007 &mkp 0x2 &trans &trans &mkp 0xfff60000 &mkp 0xfff60001 &mkp 0xfff60002 &trans
+            &trans     &mkp MB1 &msc SCRL_DOWN &mkp MB2 &trans &trans &mkp MOVE_LEFT &mkp MOVE_DOWN &mkp MOVE_RIGHT &trans
          //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
          //│          │          │          │          │          │   │          │          │          │          │          │
             &trans     &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &trans
