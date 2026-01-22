@@ -151,7 +151,7 @@
              &trans     &msc SCRL_LEFT &msc SCRL_UP &msc SCRL_RIGHT &trans &mkp MB5 &mkp MB4 &mmv MOVE_UP &trans &trans &trans
          //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
          //│          │  LCLK    │SCRL_DOWN │  RCLK    │          │   │          │  LEFT    │  DOWN    │  RIGHT   │          │
-            &trans     &mkp MB1 &msc SCRL_DOWN &mkp MB2 &trans &trans &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &trans
+            &trans     &mkp MB1 &msc SCRL_DOWN &mkp MB2 &trans         &trans     &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &trans
          //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
          //│          │          │          │          │          │   │          │          │          │          │          │
             &trans     &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &trans
